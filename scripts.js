@@ -8,15 +8,25 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.classList.toggle("active");
   });
 
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", function () {
+      navLinks.classList.remove("active");
+    });
+  });
+
   window.addEventListener("scroll", function () {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
     if (scrollTop > lastScrollTop) {
-      // Scrolling down
-      navbar.classList.add("hidden");
-    } else {
-      // Scrolling up
-      navbar.classList.remove("hidden");
+      navLinks.classList.remove("active");
     }
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+  });
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY === 0) {
+      navbar.classList.remove("hidden");
+    } else {
+      navbar.classList.add("hidden");
+    }
   });
 });

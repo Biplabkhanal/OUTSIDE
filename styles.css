@@ -21,7 +21,7 @@ ul {
   opacity: 0.3;
   box-sizing: border-box;
   z-index: 1000;
-  transition: top 2s;
+  transition: top 1.5s;
 }
 
 .navbar.hidden {
@@ -76,6 +76,7 @@ ul {
   background-image: url("assets/images/hero.png");
   background-size: cover;
   background-position: center;
+
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -166,7 +167,7 @@ ul {
 }
 
 /* Responsive Styling */
-@media (max-width: 768px) {
+@media (max-width: 530px) {
   .navbar .nav-links {
     display: none;
     flex-direction: column;
