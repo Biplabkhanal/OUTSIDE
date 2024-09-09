@@ -1,0 +1,294 @@
+/* Default styles */
+body,
+h1,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  background: #ffffff;
+  opacity: 0.3;
+  box-sizing: border-box;
+  z-index: 1000;
+  transition: top 2s;
+}
+
+.navbar.hidden {
+  top: -180px;
+}
+
+.navbar .logo img {
+  height: 130px;
+  width: 130px;
+}
+
+.navbar .nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+  color: #222222;
+  text-decoration: none;
+  font-family: "Space Mono", monospace;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: left;
+}
+
+.navbar .nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  background-color: #222222;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+}
+
+/* Hero Section Styling */
+.hero {
+  height: 940px;
+  background-image: url("assets/images/hero.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding-left: 155px;
+}
+
+.hero-text {
+  color: #ffffff;
+  max-width: 780px;
+}
+
+.hero-text h1 {
+  font-family: "Sora", sans-serif;
+  font-size: 80px;
+  font-weight: 600;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.hero-text p {
+  font-family: "Space Mono", monospace;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+/* Cards Section */
+
+.title {
+  font-family: Sora;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.second-text {
+  max-width: 754px;
+  font-family: Space Mono;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #3d3d3d;
+  padding: 100px 155px 20px 155px;
+}
+
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 155px 0 155px;
+}
+
+.arrow-icon {
+  padding: 11px 0 50px 0;
+  cursor: pointer;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card h2 {
+  font-family: Sora;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #065545;
+}
+
+.card p {
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #3d3d3d;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 253px;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+
+  .navbar .logo img {
+    height: 70px;
+    width: 70px;
+  }
+  .navbar {
+    height: 100px;
+  }
+  .navbar.hidden {
+    top: -100px;
+  }
+
+  .navbar .nav-links.active {
+    display: flex;
+  }
+
+  .navbar .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hero {
+    padding: 0 20px 0 20px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .cards-section {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .second-text {
+    padding: 50px 20px 20px 20px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .card h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .card p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 253px;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+
+  .navbar .logo img {
+    height: 70px;
+    width: 70px;
+  }
+  .navbar {
+    height: 100px;
+  }
+  .navbar.hidden {
+    top: -100px;
+  }
+
+  .navbar .nav-links.active {
+    display: flex;
+  }
+
+  .navbar .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hero {
+    padding: 0 50px 0 50px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+  .cards-section {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 50px;
+  }
+
+  .second-text {
+    padding: 50px 50px 20px 50px;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .card h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .card p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
