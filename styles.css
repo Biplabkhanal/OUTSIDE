@@ -198,7 +198,14 @@ ul {
   }
 
   .hero {
-    padding: 0 20px 0 20px;
+    /* font-size: 32px; */
+    padding: 0 10px 0 10px;
+  }
+  .hero-text h1 {
+    font-size: 55px;
+  }
+  .hero-text p {
+    font-size: 25px;
   }
 
   .menu-toggle {
@@ -206,12 +213,12 @@ ul {
   }
 
   .cards-section {
-    grid-template-columns: 1fr;
-    padding: 0 20px;
+    grid-template-columns: 1fr !important;
+    padding: 0 20px !important;
   }
 
   .second-text {
-    padding: 50px 20px 20px 20px;
+    padding: 50px 10px 20px 10px;
   }
 
   .title {
@@ -262,7 +269,7 @@ ul {
   }
 
   .hero {
-    padding: 0 50px 0 50px;
+    padding: 0 20px 0 20px;
   }
 
   .menu-toggle {
@@ -274,7 +281,7 @@ ul {
   }
 
   .second-text {
-    padding: 50px 50px 20px 50px;
+    padding: 50px 20px 20px 20px;
   }
 
   .title {
