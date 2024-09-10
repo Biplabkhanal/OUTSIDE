@@ -17,7 +17,7 @@ ul {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 180px;
+  height: 175px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,8 +71,7 @@ ul {
 .hero {
   height: 100vh;
   background-image: url("assets/images/hero.png");
-  background-size: cover;
-  background-position: top center;
+  background-size: 100% 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -345,15 +344,17 @@ ul {
     padding: 20px;
   }
 
-  .hero {
-    height: 109vh !important;
+  .navbar {
+    height: 90px !important;
   }
 
   .hero-text h1 {
     font-size: 45px;
+    margin-top: 80px;
+    padding-bottom: 10px;
   }
   .hero-text p {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   .cards-section {
@@ -447,7 +448,7 @@ ul {
     width: 70px;
   }
   .navbar {
-    height: 90px;
+    height: 110px;
   }
   .navbar.hidden {
     top: -100px;
@@ -463,7 +464,6 @@ ul {
 
   .hero {
     padding: 0 20px 0 20px;
-    height: 100vh;
   }
 
   .menu-toggle {
