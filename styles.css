@@ -393,9 +393,6 @@ ul {
   .video-text {
     padding: 20px 0 20px 0 !important;
   }
-  .video-thumbnail {
-    margin-bottom: 20px;
-  }
 
   .footer-content {
     flex-direction: column;
