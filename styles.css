@@ -1,6 +1,7 @@
 :root {
   --font-family-mono: "Space Mono";
   --font-family-title: "Sora";
+  --font-size-p: 18px;
 }
 
 /* Default styles */
@@ -47,7 +48,7 @@ ul {
   color: #222222;
   text-decoration: none;
   font-family: var(--font-family-mono);
-  font-size: 18px;
+  font-size: var(--font-size-p);
 }
 
 .navbar .nav-links li a:hover {
@@ -323,7 +324,7 @@ ul {
   line-height: 26.8px;
   color: #012a22;
   text-decoration: none;
-  font-size: 18px;
+  font-size: var(--font-size-p);
 }
 
 .footer-bottom {
@@ -352,9 +353,6 @@ ul {
     font-size: 45px;
     margin-top: 80px;
     padding-bottom: 10px;
-  }
-  .hero-text p {
-    font-size: 20px;
   }
 
   .cards-section {
@@ -461,6 +459,11 @@ ul {
 
   .hero {
     padding: 0 20px 0 20px;
+    height: 100vh;
+  }
+
+  .hero-text p {
+    font-size: var(--font-size-p);
   }
 
   .menu-toggle {
@@ -474,6 +477,9 @@ ul {
 
   .second-text {
     padding: 50px 20px 20px 20px;
+  }
+  .second-text p {
+    font-size: var(--font-size-p);
   }
 
   .title {
@@ -522,7 +528,7 @@ ul {
   }
 
   .video-card p {
-    font-size: 18px;
+    font-size: var(--font-size-p);
     line-height: 26px;
     letter-spacing: 0.06em;
   }
